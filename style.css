@@ -315,5 +315,6 @@ nav ul li a:hover::after{
 
 /*CSS for Small SCreen -------------------*/
 @media only screen and (max-width: 600px){
+    background-image: url(image/);
 
 }
