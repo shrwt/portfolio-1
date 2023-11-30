@@ -13,12 +13,14 @@
         <div class="container">
             <nav>
                 <img src="images\logo.png" class="logo">
-            <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Connecting Point's</a></li>
+            <ul id="sidemenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Connecting Point's</a></li>
+                <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Interface-Designer/<span>Developer</span>
@@ -28,7 +30,7 @@
             </div>
         </div>
     </div>
-    <!------------------------ this is about section on same page just below the portofilio section -->
+    <!------------------------ this is about me section on same page just below the portofilio section -->
 <div id="about">
     <div class="container">
         <div class="row">
@@ -36,8 +38,8 @@
                 <img src="images\somesh aboutme.png" alt="">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me😁</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eligendi voluptas nobis repellat voluptate ut incidunt amet ducimus quidem. Consequatur ex nihil magni eum animi pariatur odit similique explicabo molestiae.</p>
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello dear, Somesh this side !! <br> A talented, ambitious and hardworkng individual, with board skills in digital marketing, social media marketing. <br> Furthermore, I have the working knowledge of Microsoft office, also learnt HTML & CSS. <br> Apart from that i am also handeling a blog <a href="https://topichelp.in">(topichelp.in)</a> and also stretching my skills to cloud engineer and full stack web developer.  </p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
@@ -68,7 +70,7 @@
         </div>
     </div>
 </div>
-<!--services Section Starts from here-->
+<!---------------------------------services Section Starts from here---------------------------->
 <div id="services">
     <div class="container">
         <h1 class="sub-title"> Services & Project's </h1>
@@ -76,19 +78,19 @@
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2> Web Design </h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed accusantium delectus deleniti saepe facere corrupti quidem vero laudantium sit atque pariatur non aperiam quasi, accusamus inventore sunt odio animi laborum.</p>
+                <p>Grow your business with Online with reach to bllions of people. make you identity on internet wth a super fast website. We work on your brand reputation and image that reflect you as a positive brand..</p>
                 <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="fa-brands fa-figma"></i>
                 <h2> UI/UX Design </h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed accusantium delectus deleniti saepe facere corrupti quidem vero laudantium sit atque pariatur non aperiam quasi, accusamus inventore sunt odio animi laborum.</p>
+                <p> Make your website stand with a new and unique design with our expert's Give it anew feel and look today with our board and experienced designers.</p>
                 <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="fa-solid fa-cloud"></i>
                 <h2> Cloud Engineer </h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed accusantium delectus deleniti saepe facere corrupti quidem vero laudantium sit atque pariatur non aperiam quasi, accusamus inventore sunt odio animi laborum.</p>
+                <p>Hand over your system command to our cloud engineers, who has more than 2years of experience in cloud computing and with a vast skills in DBA and Cloud Computing.</p>
                 <a href="#">Learn More</a>
             </div>
         </div>
@@ -104,7 +106,7 @@
                 <div class="layer">
                     <i class="fa-solid fa-chart-simple"></i>
                     <h3>Digital Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora veritatis quas consequatur, velit eligendi facere similique ipsum unde explicabo accusantium vero doloribus voluptatibus itaque sint! Aut libero nesciunt perferendis.</p>
+                    <p>Are you ready to grow and market to your social media audiences? We create social media campaigns to help your company grow and engage its followers. Our digital marketing agency identifies your objectives, conducts competitor benchmarking, and assesses your customers’ online behavior.</p>
                     <a href="#"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
@@ -113,7 +115,7 @@
                 <div class="layer">
                     <i class="fa-brands fa-searchengin"></i>
                     <h3>Search Engine Optimisation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora veritatis quas consequatur, velit eligendi facere similique ipsum unde explicabo accusantium vero doloribus voluptatibus itaque sint! Aut libero nesciunt perferendis.</p>
+                    <p>We can assist you in achieving higher organic rankings and increased visibility in search results through careful keyword research and white hat SEO practices. Our internet marketing company conducts in-depth keyword research, optimizes your website on-page and off-page, and tracks your results using Google Search Console.</p>
                     <a href="#"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
@@ -122,7 +124,7 @@
                 <div class="layer">
                     <i class="fa-regular fa-building"></i>
                     <h3>TH-digital</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora veritatis quas consequatur, velit eligendi facere similique ipsum unde explicabo accusantium vero doloribus voluptatibus itaque sint! Aut libero nesciunt perferendis.</p>
+                    <p>Let the TH-digital help you in getting more customers and engaging with existing one’s. As your business is different with unique goals, unique products or services, audiences and budgets, we tailor your Social Media Strategy to your unique situation.</p>
                     <a href="#"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
@@ -147,9 +149,7 @@
             </div>
             <div class="contact-right">
                 <form>
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
+                    <!--here will be form promoted input form name subject etc, i have leaved this form-->
                 </form>
             </div>
             </div>
@@ -178,6 +178,21 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 </script>
+
+<!-------------------side menu one and close menu onclick script----------->
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
 
 </body>
 </html>
